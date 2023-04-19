@@ -1,4 +1,4 @@
-const { Thought } = require('../models');
+const { Thought, User } = require('../models');
 
 module.exports = {
     // Retrieves all Thoughts
@@ -44,6 +44,7 @@ module.exports = {
             )
             res.json(thought);
         } catch (err) {
+            console.log(err);
             res.status(500).json(err);
         }
     },
@@ -63,9 +64,12 @@ module.exports = {
 
             res.json(thought);
         } catch (err) {
+            console.log(err);
             res.status(500).json(err);
         }
     },
+
+    // Deletes an existing thought
     async deleteThought(req, res) {
         try {
             const thought = await Thought.findOneAndRemove({ _id: req.params.thoughtId });

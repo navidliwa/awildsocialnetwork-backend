@@ -1,21 +1,6 @@
 const { ObjectId } = require('mongoose').Types;
 const { User, Thought, Reaction } = require('../models');
 
-// const userThoughts = async (userId) =>
-//   User.get([
-//     // only include the given student by using $match
-//     { $match: { _id: new ObjectId(userId) } },
-//     {
-//       $unwind: '$thoughts',
-//     },
-//     {
-//       $group: {
-//         _id: new ObjectId(userId),
-//         overallGrade: { $avg: '$assignments.score' },
-//       },
-//     },
-//   ]);
-
 module.exports = {
   // Retrieves all Users
   async getUsers(req, res) {
