@@ -84,7 +84,7 @@ module.exports = {
         { new: true }
       );
 
-      res.json({ message: `Added friend: ${friend}` });
+      res.json({ message: `Added friend!` });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
@@ -100,7 +100,7 @@ module.exports = {
         { new: true }
       );
 
-      res.json({ message: `Deleted friend: ${friend}` });
+      res.json({ message: `Deleted friend :(` });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
