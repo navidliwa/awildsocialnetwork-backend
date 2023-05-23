@@ -3,7 +3,7 @@
 ## Description
 A Wild Social Network is a social network api that uses MongoDB to manage its database. Using this api you can create and update Users that can be assigned Thoughts and Friends. Thoughts can be updated and assigned Reactions. Both Friends and Reactions can be removed as well.
 
-[Click here for a video demonstrating this project's usage!]()
+[Click here for a video demonstrating this project's usage!](https://www.youtube.com/watch?v=qWa2Kmlwt_0)
 
 
 ## Table of Contents
