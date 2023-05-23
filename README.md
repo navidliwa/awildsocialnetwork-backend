@@ -14,23 +14,23 @@ A Wild Social Network is a social network api that uses MongoDB to manage its da
 
 - [Credits](#credits)
 
-- [License](#license)
-
 - [Features](#features)
+
+- [License](#license)
 
 ## Installation
 To install simply download or clone this repository into a folder of your choosing on your local machine.
 
 
 ## Usage
-After installed open up a terminal from the root folder of this project and invoke "npm start" in the command line. This will start the server and connect to the MongoDB database. Once started you can test the User, Thoughts, Reactions and Friends routes by passing GET, POST, PUT and DELETE http requests through insomnia. Please refer to the video linked in the description for a more detailed overview.
+After installed open up a terminal from the root folder of this project and invoke "npm start" in the command line. This will start the server and connect to the MongoDB database. Once started you can test the User, Thoughts, Reactions and Friends routes by passing GET, POST, PUT and DELETE http requests through insomnia. The database will then be updated using the request bodies if applicable. Please refer to the video linked in the description for a more detailed overview.
 
 
 ## Features
-- Automatic SVG file generation
-- Colors can be of any color keyword or hexadecimal
-- Can select a circle, triangle, or square as background shape
-- Simple to use
+- Connects to MongoDB database
+- Allows for testing of Users, Thoughts, Reactions and Friends routes
+- Allows GET, POST, PUT and DELETE http requests to routes
+- Updates database to reflect request bodies
 
 ## License
 Licensed under the MIT License.
